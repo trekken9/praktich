@@ -12,13 +12,13 @@ int main() {
     d = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 
     if (d == 0 && r1 == r2) {
-        printf("-1\n");
+        printf("-1\n"); // нескінченна кількість точок перетину
     } else if (d > r1 + r2 || d < fabs(r1 - r2)) {
-        printf("0\n");
+        printf("0\n"); // немає точок перетину
     } else if (d == r1 + r2 || d == fabs(r1 - r2)) {
-        printf("1\n");
+        printf("1\n"); // одна точка перетину
     } else {
-        printf("2\n");
+        printf("2\n"); // дві точки перетину
     }
 
     return 0;
